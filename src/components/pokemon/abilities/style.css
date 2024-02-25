@@ -1,0 +1,11 @@
+.box-ability {
+    display: flex;
+    flex-wrap: wrap;
+    width: 26em;
+    height: auto;
+    padding: 2em;
+}
+
+.box-ability h3 {
+    margin: 0;
+}

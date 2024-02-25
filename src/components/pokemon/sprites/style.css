@@ -1,0 +1,15 @@
+.sprite-item h3 {
+    padding: 1em 0 0 2em;
+    margin-top: 0;
+}
+
+.box-sprite {
+    display: flex;
+    flex-wrap: wrap;
+    width: 30em;
+    height: auto;
+}
+
+.gallery-sprite {
+    padding: 0 15px 15px 15px;
+}

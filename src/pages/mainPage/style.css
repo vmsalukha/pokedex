@@ -1,0 +1,30 @@
+.my-bg-primary-subtle {
+  background-color: #cfe2ff;
+}
+
+.footer {
+  flex: 0 0 auto;
+  padding-top: 7%;
+  padding-bottom: 7%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.pagination-container {
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+.pokemons-container {
+  margin-top: 70px;
+  z-index: 1;
+}
