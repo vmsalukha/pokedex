@@ -6,7 +6,7 @@ import "nprogress/nprogress.css";
 import './App.css';
 import NotFoundPage from "./pages/Notfoundpage";
 import UserRoutes from "./routes/user/UserRoutes";
-import routes from "./routes/user/UserRoutes";
+// import routes from "./routes/user/UserRoutes";
 
 export const AppContext = createContext({});
 
@@ -17,7 +17,7 @@ function App() {
   const authRouteRender = () => {
     if (!authenticated) {
       return (
-        routes.map((route, index) => (
+        UserRoutes.map((route, index) => (
           <Route key={index} path={route.path} element={route.element} />
         ))
       );
@@ -25,7 +25,7 @@ function App() {
       let roleRoutes;
       switch (true) {
         case roles.includes("ROLE_USER"): roleRoutes = UserRoutes; break;
-        default: roleRoutes = routes; break;
+        default: roleRoutes = UserRoutes; break;
       }
       return (
         roleRoutes.map((route, index) => (

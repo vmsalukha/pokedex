@@ -11,12 +11,12 @@ const PokemonImg = ({ pokemon }) => (
   <Paper elevation={3} sx={{ width: '30em', height: 'auto', display: 'flex', flexDirection: 'column' }}>
 
     <div style={{ alignSelf: 'flex-start' }}>
-      <Link
+    <Link
         // to="/"
         style={{ textDecoration: 'none', color: 'inherit' }}
         onClick={() => {
           startTransition(() => {
-            window.location.href = "/";
+            window.location.href = "";
           });
         }}
       >
