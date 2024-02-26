@@ -1,7 +1,7 @@
 import React, { startTransition, useEffect, useState } from "react";
 import { useParams } from 'react-router-dom';
 
-import PokemonCard from "./PokemonImg";
+import PokemonImg from "./PokemonImg";
 import SpriteGallery from './sprites';
 import StateChart from "./stateChart";
 import Abilities from "./abilities";
@@ -31,7 +31,7 @@ const Pokemon = () => {
       {pokemon ? (
         <div >
           <div className="row-container">
-            <PokemonCard pokemon={pokemon}></PokemonCard>
+            <PokemonImg pokemon={pokemon}></PokemonImg>
             <Abilities abilities={pokemon.abilities} />
           </div>
           <div className="row-container">

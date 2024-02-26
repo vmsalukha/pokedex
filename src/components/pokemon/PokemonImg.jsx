@@ -12,7 +12,7 @@ const PokemonImg = ({ pokemon }) => (
 
     <div style={{ alignSelf: 'flex-start' }}>
       <Link
-        to="/"
+        // to="/"
         style={{ textDecoration: 'none', color: 'inherit' }}
         onClick={() => {
           startTransition(() => {
